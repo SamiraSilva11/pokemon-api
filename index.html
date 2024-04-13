@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<div class="iphone-x">
+			<div class="side">
+			  <div class="screen">
+				
+				<div class="pokedexScreen">
+					
+					
+					<div class="pokedex-header">
+						<h1>Pokédex</h1>
+					</div>
+
+					<!-- <div class="search__container">
+						<input id='poke1' class="search__input" type="text" name="" value="" placeholder="Pokémon name or ID" autocomplete="off">
+					</div> -->
+					
+					<section class="section pokedex-pokemon-header overflow-visible">
+						<div class="pokedex-pokemon-pagination">
+						  <a href="" class="previous" id="previous">
+							<div class="pokedex-pokemon-pagination-wrapper">
+							  <span class="fa-solid fa-circle-chevron-left"></span>
+							  	<div class="nameNum">
+									<span class="prevName hidden-mobile"></span>
+									<span class="prevId"></span>
+								</div>
+							</div>
+						  </a>
+						  <div class="search__container">
+							<input id='poke1' class="search__input" type="text" name="" value="" placeholder="Search Pokémon Name or ID" autocomplete="off">
+						</div>
+					  
+						  <a href="" class="next" id="next">
+							<div class="pokedex-pokemon-pagination-wrapper">
+								<div class="nameNum">
+									<span class="nextName hidden-mobile"></span>
+									<span class="nextId"></span>
+								</div>
+								<span class="fa-solid fa-circle-chevron-right"></span>
+							</div>
+						  </a>
+						</div>
+						<div class="pokedex-pokemon-pagination-title">
+						  <div class=>
+							<span class="pokemon-name"></span>
+							<span class="pokemon-number"></span>
+						  </div>
+						</div>
+					</section>
+				 
+			
+					
+					<div class="pokemon-img">
+                        <img class="pokemon-img__back" src="img/pokemon_bg.png">
+                        <img class="pokemon-img__blur" src="img/random_bg.png">
+						<img id='pokeImg1' src="placeholder.jpg" alt="" style="display: none;">
+					</div>
+						
+					
+					
+						<div class="nameAndId">
+							<h2 id="name">Result</h2>
+							<h2 id="id">Result</h2>
+						</div>
+						
+						<table class="stats">
+							<tr>
+								<td class="attribute-title"><strong>Height:</strong></td>
+								<td class="attribute-value" id="height"></td>
+							</tr>
+							<tr>
+								<td class="attribute-title"><strong>Weight:</strong></td>
+								<td class="attribute-value" id="weight"></td>
+							</tr>
+							<tr>
+								<td class="attribute-title"><strong>Category:</strong></td>
+								<td class="attribute-value" id="category"></td>
+							</tr>
+							<tr>
+								<td class="attribute-title"><strong>Abilities:</strong></td>
+								<td class="attribute-value" id="abilities"></td>
+							</tr>
+						</table>
+
+						
+						
+					
+						<div class="skills">  <!-- create a div -->
+							<div class="column-left">
+								<li>
+									<div class="skill-title"><h3>HP</h3><h3 class="skill-value" id="hp"></h3></div><span class="bar"><span class="hp"></span></span> <!-- skill bar 1 -->
+								</li>
+							
+								<li>
+									<div class="skill-title"><h3>Attack</h3><h3 class="skill-value" id="atk"></h3></div><span class="bar"><span class="atk"></span></span><!-- skill bar 2 -->
+								</li>
+							
+								<li>
+									<div class="skill-title"><h3>Defense</h3> <h3 class="skill-value" id="def"></h3></div><span class="bar"><span class="def"></span></span><!-- skill bar 3 -->
+								</li>
+							</div>
+
+							<div class="column-right">
+								<li>
+									<div class="skill-title"><h3>Special-Attack</h3><h3 class="skill-value" id="sp-atk"></h3></div><span class="bar"><span class="sp-atk"></span></span><!-- skill bar 5 -->
+								</li>
+							
+								<li>
+									<div class="skill-title"><h3>Special-Defense</h3><h3 class="skill-value" id="spc-def"></h3></div><span class="bar"><span class="spc-def"></span></span><!-- skill bar 6 -->
+								</li>
+							
+								<li>
+									<div class="skill-title"><h3>Speed</h3><h3 class="skill-value" id="speed"></h3></div><span class="bar"><span class="speed"></span></span><!-- skill bar 7 -->
+								</li>
+							</div>
+						</div>
+
+					
+				
+				</div>
+				</div>
+				</div>
+				 <!-- <video  src="https://images.apple.com/media/us/iphone-x/2017/01df5b43-28e4-4848-bf20-490c34a926a7/overview/primary/hero/small_2x.mp4" autoplay="autoplay" loop="loop"></video>  -->
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="header">
+			  <div class="sensor-1"></div>
+			  <div class="sensor-2"></div>
+			  <div class="sensor-3"></div>
+			</div>
+			<div class="volume-button"></div>
+			<div class="power-button"></div>
+		  </div>
+
+		
+		
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,510 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+.fa-solid{
+  color: #8b0000;
+}
+
+strong, #name, .skill-title, .prevName, .nextName{
+  color: black;
+}
+
+#id, .attribute-value, .skill-value, .prevId, .nextId{
+  color: grey;
+}
+
+table{
+  font-size: 14px;
+}
+
+.pokedex-header {
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/class29-materials/rainbow-badge/img/sort_sp_close_bg.png');
+  background-size: cover; /* Adjust the background size as needed */
+  background-position: center; /* Adjust the background position as needed */
+  background-repeat: no-repeat; /* Ensure the background image is not repeated */
+  text-align: center; /* Center the content horizontally */
+  color:white;
+}
+
+h1{
+  position: relative;
+  font-size: large;
+}
+
+
+
+
+.nameAndId{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+#name{
+  padding-right: 5px;
+}
+
+#id{
+  padding-left: 5px;
+}
+
+.prevName, .nextName{
+  font-weight: bold;
+  font-size: small;
+}
+
+.prevId, .nextId{
+  font-size: small;
+}
+
+.skill-title{
+  font-weight: normal;
+}
+
+.skill-value{
+  font-weight: normal;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+
+.iphone-x {
+  position: relative;
+  z-index: 1;
+  height: 694px;
+  width: 342px;
+}
+.iphone-x *, .iphone-x *::before, .iphone-x *::after {
+  box-sizing: border-box;
+}
+.iphone-x .side {
+  background: #8b0000;
+  border-radius: 54px;
+  box-shadow: inset 0 0 2px 2px dimgrey, inset 0 0 0 6px #e2e3e9, 0px -1px 13px 9px rgba(255,255,255,0.8) inset;
+  height: 694px;
+  padding: 15px 22px;
+  width: 342px;
+  z-index: 1;
+}
+.iphone-x .screen {
+  background:rgba(255,255,255,0.8);
+  /* background-image: url('/class29-materials/rainbow-badge/img/list_bg.jpg'); */
+  background-position: center center;
+  background-size: cover;
+  border-radius: 33px;
+  position: relative;
+  height: 652px;
+  width: 300px;
+  margin-left: -1px;
+  margin-top: 6px;
+  z-index:198;
+  overflow:hidden;
+}
+video {
+  height: 700px;
+  width: 350px;
+  margin-top: -30px;
+  margin-left:-10px;
+}
+.iphone-x .line::after, .iphone-x .line::before {
+  content: "";
+  position: absolute;
+  border: solid rgba(68, 68, 68, 0.25);
+  border-width: 0 6px;
+  height: 5px;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+.iphone-x .line::after {
+  top: 68px;
+}
+.iphone-x .line::before {
+  bottom: 68px;
+}
+.iphone-x .header {
+  background: #1c1c1c;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  height: 24px;
+  left: 50%;
+  margin-left: -82px;
+  position: absolute;
+  top: 15px;
+  width: 164px;
+  z-index: 199;
+}
+.iphone-x .sensor-1::after, .iphone-x .sensor-1::before {
+  content: "";
+  position: absolute;
+}
+.iphone-x .sensor-1::after {
+  background: #222;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  left: 1%;
+  margin-left: 10px;
+  top: 3px;
+}
+.iphone-x .sensor-1::before {
+  background: #222;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  left: 10%;
+  margin-left: 20px;
+  top: 3px;
+}
+.iphone-x .sensor-2::after, .iphone-x .sensor-2::before {
+  content: "";
+  position: absolute;
+}
+.iphone-x .sensor-2::before {
+  background: #333;
+  border-radius: 2.5px;
+  height: 5px;
+  width: 40px;
+  left: 50%;
+  margin-left: -20px;
+  top: 7px;
+}
+.iphone-x .sensor-3::after, .iphone-x .sensor-3::before {
+  content: "";
+  position: absolute;
+}
+.iphone-x .sensor-3::before {
+  background: #444;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  left: 50%;
+  margin-left: 35px;
+  top: 3px;
+  box-shadow:0px 0px 5px 2px navy inset
+}
+.iphone-x .sensor-3::after {
+  background: #222;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  left: 65%;
+  margin-left: 33px;
+}
+.iphone-x .volume-button {
+  background: #c8cacb;
+  height: 26px;
+  left: -2px;
+  position: absolute;
+  top: 92px;
+  width: 3px;
+}
+.iphone-x .volume-button::after, .iphone-x .volume-button::before {
+  content: "";
+  position: absolute;
+  background: #c8cacb;
+  height: 50px;
+  left: 0;
+  width: 3px;
+}
+.iphone-x .volume-button::after {
+  top: 48px;
+}
+.iphone-x .volume-button::before {
+  top: 112px;
+}
+.iphone-x .power-button {
+  background: #c8cacb;
+  height: 80px;
+  right: -2px;
+  position: absolute;
+  top: 160px;
+  width: 3px;
+}
+
+.pokedexScreen{
+  padding: 10px;
+  height: 694px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+  /* background-image: url('/class29-materials/rainbow-badge/img/list_bg.jpg'); */
+  /* background-color: #0a141e; */
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.pokedex-pokemon-pagination {
+  display: flex;
+  justify-content: space-between; /* Align items at the ends of the container */
+  align-items: center; /* Center items vertically */
+}
+
+a{
+  text-decoration: none;
+}
+
+.currentNameId {
+  display:flex
+}
+
+.pokemon-img__blur{
+  width: 25%;
+}
+
+@keyframes rotateBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pokemon-img__back {
+  animation: rotateBack 3s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+#pokeImg1{
+  z-index: 99;
+  
+}
+
+.pokemon-img {
+  position: relative;
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+}
+
+.pokemon-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Take up full width of parent container */
+  height: 100%; /* Take up full height of parent container */
+}
+
+.pokemon-img__blur{
+  padding: 30px;
+}
+
+.pokedex-pokemon-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.pokedex-pokemon-pagination-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.pokedex-pokemon-pagination-wrapper > span {
+  margin-right: 10px; /* Adjust the margin as needed */
+  margin-left: 10px;
+}
+
+.pokedex-pokemon-pagination {
+  width: 280px; /* Adjust width as needed */
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(232, 204, 205);
+  position: relative;
+  transition: transform 250ms ease-in-out;
+  font-size: 14px;
+  line-height: 18px;
+  color: #575756;
+  border-radius: 50px;
+  border: 1px solid #575756;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  box-shadow: 0 0 10px #2187e7b3;
+}
+
+
+
+.nameNum{
+  text-align: center;
+}
+
+
+.previous,
+.next {
+  flex: 1; /* Each side takes equal space */
+  padding: 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the content vertically */
+  
+}
+
+.previous {
+  /* Ensure the container takes up the full width */
+  display: flex;
+  justify-content: flex-start;
+}
+
+.next {
+  /* Ensure the container takes up the full width */
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.pokedex-pokemon-pagination a.previous {
+  height: 44px;
+}
+
+/******************************************
+/* Skillbar
+/*******************************************/
+
+li {
+  list-style-type: none;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: small;
+}
+
+.skills {
+  margin-top:20px;
+  width: 280px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Enable wrapping to create two columns */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+.column-left {
+  width: 48%;
+  align-items: flex-end;
+}
+
+.column-right {
+  width: 48%;
+  align-items: flex-end;
+}
+
+.bar {
+  background-color: #353b48;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span {
+  height: 2px;
+  float: left;
+  background-color: #2187e7;
+}
+
+
+
+.skill-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+/******************************************
+/* SEARCH BOX STYLE
+/*******************************************/
+
+.search__container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.search__title {
+  font-size: 10px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.search__input {
+  text-align: center;
+  width: 100%;
+  height: 44px;
+  padding: 12px 0px;
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+  font-size: 12px;
+  line-height: 18px;
+  color: #575756;
+  border: 1px solid #575756;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  
+
+  &::placeholder {
+      color: rgba(87, 87, 86, 0.8);
+      white-space: pre-wrap;
+      line-height: 1.5;
+      text-transform: uppercase;
+      letter-spacing: 1.0px;
+      text-align: center;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  &:hover,
+  &:focus {
+      padding: 12px 0;
+      outline: 0;
+      border: 1px solid transparent;
+      border-bottom: 1px solid #575756;
+      border-right: 1px solid #575756;
+      border-left: 1px solid #575756;
+      border-radius: 0;
+      background-position: 100% center;
+  }
+}
