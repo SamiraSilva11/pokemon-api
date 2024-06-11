@@ -14,5 +14,5 @@
 
 ### Sources
 This site was built using 
-https://pokeapi.co
-https://github.com/PokeAPI/pokeapi
+- https://pokeapi.co
+- https://github.com/PokeAPI/pokeapi
