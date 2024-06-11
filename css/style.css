@@ -7,6 +7,13 @@
   box-sizing: border-box;
 }
 
+body{
+  background-image: url('pokemon-api/img/7896096.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
